@@ -6,5 +6,7 @@ resource "aws_s3_bucket" "ccit_s321" {
   bucket = "ccit-public-bucket1"
   tags = { Name        = "ccit-public-bucket123"
     Environment = "prod"
-    Owner       = "naga" }
+    Owner       = "naga",
+    Project = "ccit"
+}
 }
